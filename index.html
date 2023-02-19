@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/4518a9ec8f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/4406/4406319.png"
+      type="image/x-icon"
+    />
+
+    <title>Complete the Course!</title>
+  </head>
+
+  <body>
+    <!-- navbar  start -->
+    <nav class="nav">
+      <div class="brand-area container">
+        <a href="index.html" class="brand">
+          <img
+            src="https://beaconit.org/wp-content/uploads/2022/09/website-logologo.png"
+            alt="hamidthedev Logo"
+          />
+        </a>
+      </div>
+      <div class="avatar">
+        <img
+          src="https://beaconit.org/wp-content/uploads/2022/09/Circle.png"
+          alt="Hamidthedev Logo"
+        />
+        <p>HC</p>
+      </div>
+    </nav>
+    <!-- navbar end start -->
+
+    <!-- main start -->
+    <section class="main">
+      <!-- course details start -->
+      <div class="milestoneDetails">
+        <img
+          class="milestoneImage"
+          src="https://beaconit.org/wp-content/uploads/2022/09/Thumbnail_.png"
+          alt=""
+        />
+
+        <video
+          src=""
+          class="video"
+          id="player"
+          playsinline
+          controls
+          autoplay
+          data-poster="/path/to/poster.jpg"
+        >
+          <!-- viedo will play here-->
+        </video>
+        <iframe src="" class="pdf" frameborder="0"></iframe>
+        <h1 class="title">Welcome to the Course!</h1>
+        <!-- <p class="details">Module description here</p> -->
+        <div class="playNext">
+          <button class="previous" onclick="previous()">Previous</button>
+          <button class="next" onclick="next()">Next</button>
+        </div>
+      </div>
+      <!-- course details end -->
+
+      <!-- all milestones & modules start -->
+      <div style="position: relative;">
+        <div class="search-container">
+          <input class="search-input" type="text" placeholder="Search" />
+        </div>
+        <div class="search-results"></div>
+        <div class="milestones">
+          <div class="milestone border-b">
+            <div class="flex">
+              <div class="checkbox"><input type="checkbox" /></div>
+              <div>
+                <p>
+                  Milestone 1 name
+                  <span><i class="fas fa-chevron-down"></i></span>
+                </p>
+              </div>
+            </div>
+            <div class="hidden_panel">
+              <div class="module border-b">
+                <p>Module Name</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="doneList">
+          <!-- done list will load here -->
+        </div>
+      </div>
+      <!-- all milestones and modules end -->
+    </section>
+
+    <!-- <script src="./js/data.js"></script> -->
+    <script src="https://cdn.plyr.io/3.7.3/plyr.polyfilled.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      const player = new Plyr("#player");
+    </script>
+  </body>
+</html>
+
+
